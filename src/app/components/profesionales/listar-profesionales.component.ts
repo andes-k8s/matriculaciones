@@ -37,7 +37,7 @@ export class ListarProfesionalesComponent implements OnInit {
   @HostBinding('class.plex-layout') layout = true;  // Permite el uso de flex-box en el componente
 
   private profesionales: IProfesional[] = [];
-  private profesionalElegido: IProfesional;
+  public profesionalElegido: IProfesional;
   private showListado: Boolean = true;
   public dni: string = null;
   public estadoSeleccionadoG;

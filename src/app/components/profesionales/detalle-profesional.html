@@ -15,8 +15,8 @@
         </div>
       </div>
     </header>
-    <div id="wrapper" *ngIf="flag == true">
-      <plex-tabs>
+    <ng-container id="wrapper" *ngIf="flag == true">
+      <plex-tabs size="full">
         <!-- Contacto y Domicilios -->
         <plex-tab label="Contacto y Domicilios">
           <app-contacto-domicilios-profesional [profesional]="profesional">
@@ -74,7 +74,7 @@
           </app-otros-datos>
         </plex-tab>
       </plex-tabs>
-    </div>
+    </ng-container>
     <app-profesional *ngIf="flag == false" [profesional]='profesional' [showOtraEntidadFormadora]='tieneOtraEntidad'
                      [confirmar]='confirmar' (editado)="this.flag = true" [editable]='editable'></app-profesional>
 

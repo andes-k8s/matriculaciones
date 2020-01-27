@@ -21,8 +21,7 @@ const jsPDF = require('jspdf');
 
 @Component({
   selector: 'app-detalle-profesional',
-  templateUrl: 'detalle-profesional.html',
-  styles: ['.margenFoto { padding-bottom: 1%; }']
+  templateUrl: 'detalle-profesional.html'
 })
 
 export class DetalleProfesionalComponent implements OnInit {
